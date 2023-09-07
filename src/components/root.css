@@ -1,0 +1,17 @@
+.root{
+    font-family: "Heebo",sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #666565;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative !important;
+    /* padding: 0 !important; */
+    display: inline-block;
+    padding-top: 100px;
+}

@@ -1,0 +1,58 @@
+.booktable{
+    font-family: "Heebo",sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #666565;
+    visibility: visible;
+    box-sizing: border-box;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.booktable-video{
+    max-width: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-top: 3rem;
+    flex: 0 0 auto;
+    width: 50%;
+    visibility: visible;
+    position: relative;
+    height: 100%;
+    min-height: 500px;
+    background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(/public/images/booktable.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.booktable-form{
+    max-width: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-top: 3rem;
+    flex: 0 0 auto;
+    width: 50%;
+    visibility: visible;
+    position: relative;
+    height: 100%;
+    min-height: 500px;
+    display: inline-block;
+
+}
+
+/* input[type="email"],
+        input[type="tel"],
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            display: inline-block;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            width: 80%;
+        } */

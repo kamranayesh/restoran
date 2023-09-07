@@ -1,0 +1,82 @@
+.nav-bar{
+    font-family: "Heebo",sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #666565;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    padding-right: 3rem ;
+    padding-left: 3rem ;
+    padding-top: 0 ;
+    padding-bottom: 0 ;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 100px;
+    background-color: #0F172B;
+}
+
+.nav-bar-btn{
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    margin-left: 25px;
+    font-size: 15px;
+    color: #F1F8FF ;
+    text-transform: uppercase;
+    font-weight: 500;
+    outline: none;
+    transition: .5s;
+    padding: 20px 0;
+}
+
+.book-table-btn{
+    margin-left: 25px;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    border-radius: 2px;
+    background-color: #FEA116;
+    border-color: #FEA116;
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+    padding-top: .5rem !important;
+    padding-bottom: .5rem !important;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .5s;
+    color: #FFFFFF;
+}
+.restoran-icon{
+    margin-right: auto;
+    white-space: nowrap;
+    box-sizing: border-box;
+    font-family: "Nunito",sans-serif;
+    font-weight: 800;
+    line-height: 1.2;
+    font-size: calc(1.375rem + 1.5vw);
+    color: #FEA116 !important;
+}
+
+.nav-bar-btn:hover{
+    color: #FEA116;
+    text-decoration: none;
+}
