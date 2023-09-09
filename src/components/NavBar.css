@@ -80,3 +80,28 @@
     color: #FEA116;
     text-decoration: none;
 }
+
+.cart-btn{
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    margin-left: 5px;
+    font-size: 15px;
+    color: #F1F8FF ;
+    text-transform: uppercase;
+    font-weight: 500;
+    outline: none;
+    transition: .5s;
+    padding: 5px 0;
+}
+
+.cart-btn span{
+    background-color: #FEA116;
+}
+
+.cart-btn:hover{
+    color: #FEA116;
+    text-decoration: none;
+}

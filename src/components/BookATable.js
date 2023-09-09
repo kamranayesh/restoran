@@ -1,7 +1,8 @@
 import "./BookATable.css";
-import { Button, TextField } from "@mui/material";
-
+import { useDispatch, useSelector } from "react-redux";
+import { bookATable } from "../utils/action";
 const BookATable = () => {
+  const dispatch = useDispatch();
   const handleSubmit = (e) => {
     e.preventDefault();
     const formObj = e.target;
@@ -12,7 +13,7 @@ const BookATable = () => {
       select1: formObj.select1.value,
       message: formObj.message.value,
     };
-
+    dispatch(bookATable(bookObj));
     // axios.post("/bookings", bookObj).then((response) => {
     //   console.log(response);
     // });
@@ -25,30 +26,35 @@ const BookATable = () => {
         <h5>Reservation</h5>
         <h1>Book a Table Online</h1>
         <form onSubmit={handleSubmit}>
-          <TextField
-            label="Name"
-            variant="standard"
+          <input
             type="text"
+            className="booktable-input"
+            label="Name"
             id="name"
             placeholder="Your Name"
             name="name"
             required
           />
-          <TextField
+          <input
             label="Email"
-            variant="standard"
+            className="booktable-input"
             type="email"
             id="email"
             placeholder="Your Email"
             name="email"
             required
           />
-          <br />
 
-          <label for="datetime">Date &amp; Time</label>
-          <input type="datetime-local" id="datetime" name="datetime" required />
-          <br />
-          <select id="select1" name="select1">
+          {/* <label for="datetime">Date &amp; Time</label> */}
+          <input
+            type="datetime-local"
+            id="datetime"
+            name="datetime"
+            className="booktable-input"
+            required
+          />
+          <select id="select1" name="select1" className="booktable-input">
+            <option value="">No of People</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -56,17 +62,16 @@ const BookATable = () => {
             <option value="5">5</option>
             <option value="6">6</option>
           </select>
-          <label for="select1">No Of People</label>
+          {/* <label for="select1">No Of People</label> */}
           <br />
           <textarea
             placeholder="Special Request"
             id="message"
             name="message"
+            className="booktable-textarea"
           ></textarea>
           <br />
-          <Button variant="contained" color="success" type="submit">
-            Book Now
-          </Button>
+          <button type="submit">Book Now</button>
         </form>
       </div>
     </div>
