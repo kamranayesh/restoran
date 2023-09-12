@@ -3,27 +3,17 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import "./Service.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ServiceComp = ({ icon, title, description }) => {
   return (
     <div>
-      <Card
-        className="card"
-        variant="outlined"
-        sx={{ fontSize: 14, background: "#037ef9", color: "white" }}
-      >
-        <CardContent>
-          <Typography sx={{ fontSize: 14 }} gutterBottom>
-            {icon}
-          </Typography>
-          <Typography variant="h5" component="div">
-            {title}
-          </Typography>
-
-          <br />
-          <Typography variant="body2">{description}</Typography>
-        </CardContent>
-      </Card>
+      <div className="card">
+        <FontAwesomeIcon className="service-icon" icon={icon} />
+        <div className="service-title">{title}</div>
+        <br />
+        <div className="service-des">{description}</div>
+      </div>
     </div>
   );
 };

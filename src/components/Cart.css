@@ -1,0 +1,107 @@
+.cart{
+    color: black;
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+.cart-table-row{
+    display: flex;
+    /* border: solid 1px grey; */
+    margin-bottom: 10px;
+}
+
+.cart-table-header{
+    display: flex;
+    border: solid 2px black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #FEA116 ;
+    margin-bottom: 10px;
+}
+
+.cart-table-item{
+    border-bottom: solid 1px grey;
+    width: 45%;
+}
+
+.cart-table-price{
+    border-left: solid 1px grey;
+    border-bottom: solid 1px grey;
+    width: 15%;
+}
+
+.cart-table-qty{
+    border-left: solid 1px grey;
+    border-bottom: solid 1px grey;
+    width: 10%;
+    
+}
+
+.cart-table-total{
+    border-left: solid 1px grey;
+    border-bottom: solid 1px grey;
+    width: 25%;
+    font-weight: bold;
+}
+
+.cart-table-delete{
+    border-left: solid 1px grey;
+    border-bottom: solid 1px grey;
+    color: #FEA116;
+    width: 5%;
+}
+
+.cart-table-delete :hover{
+    color: red;
+    width: 25px;
+    height: 25px;
+}
+
+.final-bill{
+    /* display: flex; */
+    float: right;
+}
+
+.final-bill div{
+    display:flex;
+    width: 400px;
+
+}
+
+.final-bill div div{
+    /* margin-left: 200px; */
+    /* display: inline-block; */
+    float: right;
+    width: 40%;
+}
+.final-bill div .a{
+    /* margin-left: 200px; */
+    /* display: inline-block; */
+    float: left;
+    width: 60%;
+}
+
+.cart button{
+    
+    display: inline-block;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    border-radius: 2px;
+    background-color: #FEA116;
+    border-color: #FEA116;
+    margin-top: 2rem ;
+    margin-left: 50rem;
+    padding-right: 2rem ;
+    padding-left: 2rem ;
+    padding-top: 1rem ;
+    padding-bottom: 1rem ;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+

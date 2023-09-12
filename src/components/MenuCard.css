@@ -1,17 +1,18 @@
 .quantity{
     width: 80px;
+    
   }
 
 .menu-container{
-  background: rgb(148,255,219);
-  background: linear-gradient(90deg, rgb(200, 243, 251) 0%, rgb(230, 248, 251) 15%, rgb(255, 255, 255),rgb(230, 248, 251) 85%, rgb(200, 243, 251) 100%);
+  
+  /* background: linear-gradient(90deg, rgb(200, 243, 251) 0%, rgb(230, 248, 251) 15%, rgb(255, 255, 255),rgb(230, 248, 251) 85%, rgb(200, 243, 251) 100%); */
   /* height:100vh; */
   position: absolute;
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 35px;
   justify-items: center;
-  padding-top: 100px;
+  padding-top: 70px;
   padding-bottom: 75px;
   width: 100vw;
   justify-content: center;
@@ -24,4 +25,51 @@
 .menu-card:hover,.menu-card:hover .menu-price,.menu-card:hover .quantity{
   background-color: #FEA116;
   color: white;
+}
+
+.menu-function{
+  display: flex;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 120px;
+}
+
+.menu-search{
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  display: inline-block;
+  width: 30%;
+  font-size: 1rem;
+  font-weight: 1rem;
+  border-width: 1px;
+  border-style: 1rem;
+  border-radius: 1rem;
+  border-color: #FEA116;
+  box-shadow: 1rem;
+  padding: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.menu-select{
+  border-radius: 1rem;
+  margin-left: 40px;
+}
+
+.menu-filter{
+  border-radius: 1rem;
+  margin-left: 40px;
+}
+
+.menu-card-change{
+  
+}
+
+.qty-span{
+  display: inline-block;
+  border: 1px solid;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
 }

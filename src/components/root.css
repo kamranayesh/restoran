@@ -4,8 +4,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #666565;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    
     box-sizing: border-box;
     width: 100%;
     margin-right: auto;
@@ -14,4 +13,46 @@
     /* padding: 0 !important; */
     display: inline-block;
     padding-top: 100px;
+    
 }
+
+.root-href{
+    
+    box-sizing: border-box;
+    text-decoration: none;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    background-color: #FEA116;
+    border-color: #FEA116;
+    font-size: 1.25rem;
+    position: fixed;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    transition: .5s;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 2px;
+    color: #FFFFFF;
+}
+
+.root-icon{
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+

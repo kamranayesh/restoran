@@ -19,6 +19,7 @@ const BookATable = () => {
     // });
     console.log("Save in backend", bookObj);
   };
+
   return (
     <div className="booktable">
       <div className="booktable-video"></div>
@@ -71,7 +72,7 @@ const BookATable = () => {
             className="booktable-textarea"
           ></textarea>
           <br />
-          <button type="submit">Book Now</button>
+          <button type="submit">BOOK NOW</button>
         </form>
       </div>
     </div>

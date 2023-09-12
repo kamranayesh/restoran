@@ -6,18 +6,19 @@ const Reducer = (state = initialState, action) => {
       ...state,
       table: [...state.table, action.payload],
     };
-    console.log(state);
-    console.log(action.payload);
-    console.log(newState);
+    // console.log(state);
+    // console.log(action.payload);
+    // console.log(newState);
     return newState;
   }
   if (action.type === "addToCart") {
-    console.log("hello", state.cart.length);
+    // console.log("hello", state.cart.length);
     for (let i = 0; i < state.cart.length; i++) {
       if (state.cart[i].name === action.payload.name) {
         const updatedCart = [...state.cart];
         updatedCart[i].quantity =
           updatedCart[i].quantity + action.payload.quantity;
+
         const newState = {
           ...state,
           cart: updatedCart,
@@ -37,6 +38,17 @@ const Reducer = (state = initialState, action) => {
     const newState = {
       ...state,
       cart: [],
+    };
+    return newState;
+  }
+  if (action.type === "deleteCartItem") {
+    let indexTodelete = action.payload;
+    // console.log("hello delete cart item", state.cart);
+    let cart = state.cart.filter((val, index) => index !== indexTodelete);
+
+    const newState = {
+      ...state,
+      cart: cart,
     };
     return newState;
   }

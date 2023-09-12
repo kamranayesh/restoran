@@ -1,0 +1,140 @@
+.about{
+    margin-top: 40px;
+    /* background-color: aqua; */
+    display: flex;
+}
+
+.aboutus{
+    padding: 150px;
+    /* background-color: blue; */
+    width: 50%;
+}
+
+.restroG{
+    /* background-color: yellow; */
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 9rem;
+}
+
+.restroGa,.restroGb,.restroGc,.restroGd{
+    flex: 0 0 auto;
+    width: 35%;
+    display: block;
+    padding: 10px;
+}
+.restroGa img,.restroGb img,.restroGc img,.restroGd img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+    overflow: hidden;
+    /* padding: 10px; */
+}
+
+.restroGb{
+    margin-top: 11.7rem;
+}
+
+.aboutus h4{
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    font-weight: 600 ;
+    text-align: center ;
+    color: #FEA116 ;
+    font-family: 'Pacifico', cursive;
+    position: relative;
+    display: inline-block;
+}
+
+.aboutus h4::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: #FEA116;
+}
+
+.aboutus h1{
+   
+    text-align: center !important;
+    visibility: visible;
+    box-sizing: border-box;
+    margin-top: 0;
+    font-family: "Nunito",sans-serif;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #0F172B;
+    font-size: 3rem;
+    margin-bottom: 3rem !important;
+}
+
+.ab-icon{
+    
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    
+    color: #FEA116 ;
+}
+
+.aboutus p{
+    
+    font-family: "Heebo",sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #666565;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --bs-gutter-x: 3rem;
+    --bs-gutter-y: 3rem;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 1.5rem !important;
+}
+
+.aboutus button{
+    
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    --bs-gutter-x: 3rem;
+    --bs-gutter-y: 3rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    border-radius: 2px;
+    background-color: #FEA116;
+    border-color: #FEA116;
+    margin-top: .5rem !important;
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .5s;
+    color: #FFFFFF;
+}
+
+.aboutus h2{
+    margin-left: 5px;
+    padding-left: 10px;
+    margin-right: 40px;
+    color: #FEA116 ;
+    border-left: solid 5px;
+    display: inline;
+}
