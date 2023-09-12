@@ -1,4 +1,4 @@
-const initialState = { table: [], cart: [] };
+const initialState = { table: [], cart: [], contact: [] };
 
 const Reducer = (state = initialState, action) => {
   if (action.type === "bookATable") {
@@ -50,6 +50,14 @@ const Reducer = (state = initialState, action) => {
       ...state,
       cart: cart,
     };
+    return newState;
+  }
+  if (action.type === "contactUS") {
+    const newState = {
+      ...state,
+      contact: [...state.cart, action.payload],
+    };
+
     return newState;
   }
   return state;

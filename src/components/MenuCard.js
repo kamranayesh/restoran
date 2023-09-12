@@ -1,17 +1,11 @@
 import React from "react";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import TextField from "@mui/material/TextField";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addToCart } from "../utils/action";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState, useEffect, useRef } from "react";
 import "./MenuCard.css";
-import { queryByText } from "@testing-library/react";
 
 const MenuCard = (props) => {
   const dispatch = useDispatch();
@@ -20,7 +14,7 @@ const MenuCard = (props) => {
   useEffect(() => {}, [qty]);
 
   const handleAdd = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     // const formObj = e.target;
     let foodObj = {
       name: props.obj.name,
@@ -46,9 +40,11 @@ const MenuCard = (props) => {
 
   return (
     <>
-      <Card className="menu-card" sx={{ maxWidth: 345 }}>
-        <CardMedia sx={{ height: 140 }} image={props.obj.image} />
-        <CardContent>
+      <div className="menu-card" sx={{ maxWidth: 345 }}>
+        <div className="menu-card-img">
+          <img src={props.obj.image} />
+        </div>
+        <div>
           <Typography gutterBottom variant="h5" component="div">
             {props.obj.name}{" "}
             <FontAwesomeIcon
@@ -68,9 +64,9 @@ const MenuCard = (props) => {
           </Typography>
 
           <Typography variant="body2">{props.obj.description}</Typography>
-        </CardContent>
-        <CardActions>
-          <form onSubmit={handleAdd} ref={formElement}>
+        </div>
+        <div ref={formElement} className="menu-form">
+          <div className="menu-card-change-container">
             <FontAwesomeIcon
               icon="fa-solid fa-minus"
               onClick={handleDeleteOne}
@@ -82,18 +78,19 @@ const MenuCard = (props) => {
               onClick={handleAddOne}
               className="menu-card-change"
             />
-            <Button
-              className="addToCartButton"
-              size="small"
-              color="success"
-              type="submit"
-              sx={{ marginLeft: 25 }}
-            >
-              Add to Cart
-            </Button>
-          </form>
-        </CardActions>
-      </Card>
+          </div>
+          <Button
+            className="addToCartButton"
+            size="small"
+            color="success"
+            type="submit"
+            sx={{ marginLeft: 25 }}
+            onClick={handleAdd}
+          >
+            Add to Cart
+          </Button>
+        </div>
+      </div>
     </>
   );
 };

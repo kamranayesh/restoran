@@ -22,7 +22,17 @@ const BookATable = () => {
 
   return (
     <div className="booktable">
-      <div className="booktable-video"></div>
+      <div className="booktable-video">
+        <iframe
+          src="https://www.youtube.com/embed/xPPLbEFbCAo?si=h8k59wtVvnKzGOpI?autoplay=1&mute=1"
+          title="YouTube video player"
+          frameborder="0"
+          autoPlay
+          muted
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
       <div className="booktable-form">
         <h5>Reservation</h5>
         <h1>Book a Table Online</h1>

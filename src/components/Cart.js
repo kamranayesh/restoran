@@ -34,44 +34,52 @@ const Cart = () => {
   return (
     <div className="cart">
       <h1>My Cart</h1>
-      <div className="cart-table-header">
-        <div className="cart-table-item">Item</div>
-        <div className="cart-table-price">Price</div>
-        <div className="cart-table-qty">Quantity</div>
-        <div className="cart-table-total">Total price</div>
-      </div>
-      {cart.map((val, index) => {
-        return (
-          <div className="cart-table-row">
-            <div className="cart-table-item">{val.name}</div>
-            <div className="cart-table-price">₹{val.price}</div>
-            <div className="cart-table-qty">{val.quantity}</div>
-            <div className="cart-table-total">₹{val.price * val.quantity}</div>
-            <div className="cart-table-delete">
-              <FontAwesomeIcon
-                icon="fa-solid fa-trash"
-                onClick={() => handleDelete(index)}
-              />
+      {cart.length ? (
+        <div>
+          <div className="cart-table-header">
+            <div className="cart-table-item">Item</div>
+            <div className="cart-table-price">Price</div>
+            <div className="cart-table-qty">Quantity</div>
+            <div className="cart-table-total">Total price</div>
+          </div>
+          {cart.map((val, index) => {
+            return (
+              <div className="cart-table-row">
+                <div className="cart-table-item">{val.name}</div>
+                <div className="cart-table-price">₹{val.price}</div>
+                <div className="cart-table-qty">{val.quantity}</div>
+                <div className="cart-table-total">
+                  ₹{val.price * val.quantity}
+                </div>
+                <div className="cart-table-delete">
+                  <FontAwesomeIcon
+                    icon="fa-solid fa-trash"
+                    onClick={() => handleDelete(index)}
+                  />
+                </div>
+              </div>
+            );
+          })}
+          <div className="final-bill">
+            <div>
+              <div className="a"> SubTotal:</div> <div>₹{sum}</div>
+            </div>
+            <div>
+              <div className="a">Tax: </div>
+              <div>₹{(sum * 0.18).toFixed(2)}</div>
+            </div>
+            <div>
+              <div className="a"> Grand Total: </div>
+              <div>
+                <b>₹{(sum + sum * 0.18).toFixed(2)}</b>
+              </div>
             </div>
           </div>
-        );
-      })}
-      <div className="final-bill">
-        <div>
-          <div className="a"> SubTotal:</div> <div>₹{sum}</div>
+          <button onClick={handleCheckOut}>Check out</button>
         </div>
-        <div>
-          <div className="a">Tax: </div>
-          <div>₹{sum * 0.18}</div>
-        </div>
-        <div>
-          <div className="a"> Grand Total: </div>
-          <div>
-            <b>₹{sum + sum * 0.18}</b>
-          </div>
-        </div>
-      </div>
-      <button onClick={handleCheckOut}>Check out</button>
+      ) : (
+        <h2>Cart is empty!</h2>
+      )}
     </div>
   );
 };

@@ -4,9 +4,7 @@
   }
 
 .menu-container{
-  
-  /* background: linear-gradient(90deg, rgb(200, 243, 251) 0%, rgb(230, 248, 251) 15%, rgb(255, 255, 255),rgb(230, 248, 251) 85%, rgb(200, 243, 251) 100%); */
-  /* height:100vh; */
+
   position: absolute;
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -14,6 +12,8 @@
   justify-items: center;
   padding-top: 70px;
   padding-bottom: 75px;
+  padding-left: 5px;
+  padding-right: 5px;
   width: 100vw;
   justify-content: center;
 }
@@ -22,6 +22,22 @@
   color: #FEA116;;
 }
 
+.menu-card{
+  position: relative;
+  width: 90%;
+  height: 525px;
+  border: 0.0625rem solid #dadce0;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  cursor:grab;
+  font-family: "Heebo",sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #666565;
+  padding: 0.75rem;
+}
 .menu-card:hover,.menu-card:hover .menu-price,.menu-card:hover .quantity{
   background-color: #FEA116;
   color: white;
@@ -62,9 +78,6 @@
   margin-left: 40px;
 }
 
-.menu-card-change{
-  
-}
 
 .qty-span{
   display: inline-block;
@@ -72,4 +85,24 @@
   width: 30px;
   height: 30px;
   padding: 5px;
+}
+
+.menu-form{
+  position: absolute;
+  bottom:10px;
+}
+
+.menu-card-change-container{
+  display: inline;
+  margin-left: 30px;
+  /* padding-left: 30px; */
+}
+
+.menu-card-img{
+  width: 100%;
+}
+
+.menu-card-img img{
+  width: 100%;
+  height: 220px;
 }
